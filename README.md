@@ -2,6 +2,11 @@
 A tool to run pmd, cpd, and cloc on java github projects and return an html report
 
 ## Depedencies
+Must have pmd installed with pmd run script in the `/usr/local/bin` and called `pmd.sh`
+
+Must have pmd libraries in `/usr/local/lib` in a directory called `pmd`
+
+Must have cloc installed in `/usr/local/bin` and called `cloc`
 
 ## Installation
 
