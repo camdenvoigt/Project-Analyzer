@@ -1,5 +1,5 @@
 # Project-Analyzer
-A tool to run pmd, cpd, and cloc on java github projects and return an html report
+A Unix tool that runs pmd, cpd, and cloc on java github projects and return an html report.
 
 ## Depedencies
 Must have pmd installed with pmd run script in the `/usr/local/bin` and called `pmd.sh`
