@@ -62,19 +62,21 @@ cloc --xml --quiet --report-file=$clocOut $projectLocation 2> /dev/null
 
 ## Compile Report
 echo "Compiling Report..."
+
 ### XSLT on cpd report
 saxon -s:$cpdOut -xsl:$cpdFilter >> $report
 
 ### XSLT on cloc report
 saxon -s:$clocOut -xsl:$clocFilter >> $report
 
+### Move report to desktop
+mv $report $HOME/Desktop
+
 ## Remove Project
 echo "Removing Project..."
 rm -rf $projectLocation/* $projectLocation/.* 2> /dev/null
 
 rm -r $projectLocation
-
-mv $report $HOME/Desktop
 
 echo "Output File Located in ~/Desktop"
 

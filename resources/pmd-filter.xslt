@@ -22,8 +22,7 @@
 			</tr>
 			<xsl:variable name="classValue" select="'test'"/>
 			<xsl:for-each-group select="//my:violation" group-by="@class">
-				<xsl:variable name="classValue" select="current-grouping-key()"/>
-				<xsl:variable name="classCount" select="count(//my:violation[contains(@class, $classValue)])"/>
+				<xsl:variable name="classCount" select="count(//my:violation[@class = current-grouping-key()])"/>
 
 				<xsl:for-each select="current-group()">
 					<xsl:choose>
