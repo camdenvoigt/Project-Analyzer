@@ -1,21 +1,21 @@
 echo "Checking if tools are installed correctly..."
-if [[ -z $(find /usr/local/bin/ -name "pmd.sh") ]]
-then
-	echo "pmd.sh is either is not in /usr/local/bin/ or is not named pmd.sh."
-	exit -1
-fi
+# if [[ -z $(find /usr/local/bin/ -name "pmd.sh") ]]
+# then
+# 	echo "pmd.sh is either is not in /usr/local/bin/ or is not named pmd.sh."
+# 	exit -1
+# fi
 
-if [[ -z $(find /usr/local/lib/ -name "pmd") ]]
-then
-	echo "PMD libraries not saved in /usr/local/lib/ in a directory called 'pmd'"
-	exit -1
-fi
+# if [[ -z $(find /usr/local/lib/ -name "pmd") ]]
+# then
+# 	echo "PMD libraries not saved in /usr/local/lib/ in a directory called 'pmd'"
+# 	exit -1
+# fi
 
-if [[ -z $(find /usr/local/bin/ -name "cloc") ]]
-then
-	echo "Cloc is not installed in /usr/local/bin/"
-	exit -1
-fi
+# if [[ -z $(find /usr/local/bin/ -name "cloc") ]]
+# then
+# 	echo "Cloc is not installed in /usr/local/bin/"
+# 	exit -1
+# fi
 
 echo "Tools installed correctly."
 
